@@ -1,0 +1,20 @@
+body{
+    font-family: Playfair Display;
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+    text-align: center;
+}
+
+img{
+    width: 440px;
+}
+section{
+    display: inline-block;
+    width: 440px;
+    padding: 15px;
+}
+
+div{
+    text-align: left;
+}
