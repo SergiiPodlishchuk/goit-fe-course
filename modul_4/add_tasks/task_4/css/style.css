@@ -1,0 +1,22 @@
+body{
+    width: 1100px;
+    counter-reset: animal;
+}
+
+
+
+.item {
+    list-style: none;
+    counter-increment: animal;
+    width: 100px;
+    display: inline-block;
+    background-color: #ffaa11;
+    color: #25fh17;
+    
+}
+
+
+.item::before {
+    margin-right: 10px;
+    content: counter(animal, lower-greek);
+}

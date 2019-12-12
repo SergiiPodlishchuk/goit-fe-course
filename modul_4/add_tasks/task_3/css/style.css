@@ -1,0 +1,25 @@
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+.item {
+    width: 150px;
+    margin: 5px;
+    padding: 10px;
+    background-color: green;
+}
+
+.item::before {
+    margin-right: 20px;
+    content: "\2192";
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
