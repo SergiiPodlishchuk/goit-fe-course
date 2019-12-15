@@ -1,40 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    box-sizing: border-box;
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+/* зачистка флоута */
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
+/* навигация */
 
-header nav{
-    margin-bottom: 106px;
-    margin-top: 36px;
+.page_nav{
+    padding-top: 35px;
 }
-
-nav{
-    vertical-align: middle;
-}
-.container{
-    max-width: 1110px;
-    margin: 0 auto;
-   
-}
-
-
 
 .logo{
-    display: block;
+    display:inline-block;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 30px;
@@ -42,51 +33,53 @@ nav{
     font-weight: lighter;
     color: #555252;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: inherit;
-    float: left;
+
 }
 
 .logo::first-letter{
     color: #1abc9c;
     font-weight: bold;
-    
+
 }
 
 .list_item{
     float: right;
-
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 6px;
 }
 
-.list_item_menu{
-    display: inline-block;
-    list-style: none;
+.list_item li {
+    float: left;
     margin-right: 35px;
-    vertical-align: middle;
 }
 
 .list_item_menu:last-child{
     margin-right: 0;
 }
 
-
 .list_item_menu a{
     color: #0f0101;
     text-transform: uppercase;
     text-decoration: none;
-    
 }
 
 .list_item_menu a:hover {
     color: #1abc9c;
 }
-
-main{
-    margin: 0;
-    padding: 0;
+/* секция FEATURED PRODUCTS */
+.main_menu{
+    margin-top: 98px;
 }
 
-
+.featured_products{
+    margin-bottom: 106px;
+}
+/* заголовок */
 .featured{
+    margin: 0;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 48px;
     text-transform: uppercase;
@@ -94,7 +87,7 @@ main{
     text-align: center;
     margin-bottom: 92px;
 }
-
+/* полоса под заголовком */
 h2::after{
     display: block;
     width: 166px;
@@ -104,24 +97,20 @@ h2::after{
     margin: 0 auto;
     margin-top: 32px;
 }
+/* список товаров */
 
-
-.featured_products{
-    margin-bottom: 106px;
+.list_products{
+    margin: 0;
+    padding: 0;
 }
 
 .product{
     width: 255px;
     height: 325px;
     list-style: none;
-    background-image: url(../img/Rectangle50.jpg);
     margin-right: 30px;
     margin-bottom: 30px;
     float: left;  
-}
-
-.product p:hover {
-    background-color: #1abc9c;
 }
 
 .product:nth-child(4n){
@@ -129,11 +118,15 @@ h2::after{
 }
 
 img{
-
+    display: block;
+    background-image: url(../img/Rectangle50.jpg);
+    
+    
 }
 
-
 .name_product{
+    margin: 0;
+    padding: 0;
     padding-left: 13px;
     text-transform: uppercase;
     background-color: #323232;
@@ -142,23 +135,37 @@ img{
     color: #ffffff;
     width: 200px;
     height: 40px;
+    box-sizing: border-box;
     display: inline-block;
+    padding-top: 3px;
+}
+
+.name_product:hover{
+    background-color: #1abc9c;
 }
 
 .cost{
+    margin: 0;
+    padding: 0;
+    width: 55px;
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
     background-color: #8c8c8c;
-    display: inline-block;
     height: 40px;
-
+    float: right;
+    padding-left: 13px;
+    box-sizing: border-box;
+    padding-top: 3px;
+     
 }
 
 .cost::before{
     content: "\0024";
 }
 
+
+/* секция latest */
 .latest {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 48px;
