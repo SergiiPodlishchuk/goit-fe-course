@@ -11,7 +11,7 @@ body{
 }
 
 img{
-    display: inline-block;
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -125,20 +125,21 @@ h2::after{
 }
 /* блок картинки */
 .image{
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: inline-block;
     width: 100%;
-    text-align: center;
-    height: 282px;
+    height: 285px;
     background-image: url(../img/Rectangle50.jpg);
     overflow: hidden;
+    position: relative;
 }
-
+/* картинка */
 .prod{
-    /* margin-bottom: -40px; */
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
 }
 
 
@@ -159,8 +160,11 @@ h2::after{
     float: left;
 }
 
-.product:hover .name_product{
-    background-color: #1abc9c;
+.product:hover .name_product, 
+.product:hover .cost{
+    background-color: rgba(26, 188, 156, 1);
+    
+    
 }
 /* абзац с ценой товара */
 .cost{
@@ -176,8 +180,6 @@ h2::after{
     box-sizing: border-box;
     padding-top: 3px;
     float: right;
-    
-     
 }
 
 .cost::before{
