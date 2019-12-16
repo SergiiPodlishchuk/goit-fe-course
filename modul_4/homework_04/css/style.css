@@ -118,6 +118,7 @@ h2::after{
     margin-right: 30px;
     margin-bottom: 30px;
     float: left; 
+    position: relative;
      
 }
 
@@ -128,6 +129,20 @@ h2::after{
 .product:nth-child(n+4) {
     margin-bottom: 0;
 }
+/* ссылка на покупку товара */
+
+.buy_prod{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+.buy_prod:hover{
+    background-color: rgba(26, 188, 156, 0.5);
+}
+
 
 /* блок картинки */
 .image{
@@ -166,12 +181,11 @@ h2::after{
     float: left;
 }
 
-.product:hover .name_product, 
+/* .product:hover .name_product, 
 .product:hover .cost{
     background-color: rgba(26, 188, 156, 1);
-    
-    
-}
+} */
+
 /* абзац с ценой товара */
 .cost{
     margin: 0;
