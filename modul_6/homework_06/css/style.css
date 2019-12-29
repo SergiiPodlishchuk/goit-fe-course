@@ -296,16 +296,16 @@ img{
 }
 
 .facebook{
-    background-image: url(../img/facebook.png);
+    background-image: url(../../img/facebook.png);
 }
 .twitter{
-    background-image: url(../img/twitter.png);
+    background-image: url(../../img/twitter.png);
 }
 .pinterest{
-    background-image: url(../img/pinterest.png);
+    background-image: url(../../img/pinterest.png);
 }
 .instagram{
-    background-image: url(../img/instagram.png);
+    background-image: url(../../img/instagram.png);
 }
 
 .social_item:hover{
