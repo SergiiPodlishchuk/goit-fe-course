@@ -1,0 +1,34 @@
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.images{
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    background-color: blueviolet;
+    list-style: none;
+   
+}
+
+.motocycle{
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    height: 250px;
+    flex-basis: 300px;
+}

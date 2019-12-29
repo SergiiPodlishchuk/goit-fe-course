@@ -1,0 +1,371 @@
+font-family: 'Montserrat', sans-serif;
+font-family: 'Kaushan Script', cursive;
+
+
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 128px;
+}
+
+.link_logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color:#95e1d3;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.2;
+    
+}
+
+.main_menu{
+    flex-basis: 491px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.item{
+    position: relative;
+}
+
+.item a{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #95e1d3;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.line{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 12px;
+    opacity: 0;
+}
+
+/* @keyframes item{
+    0%{color: #fce38a}
+    100%{color: #f38181;}
+} */
+
+.item:hover .line{
+    transition: opacity 200ms linear;
+    opacity: 1;
+}
+.item a:hover{
+    transition: color 200ms linear;
+    color: #f38181;
+    /* animation: item 200ms linear 10; */
+}
+
+/* секция amazing_services*/
+
+.amazing_services{
+    padding-bottom: 100px;
+}
+
+.work_with{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: "Kaushan Script";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 16px;
+
+}
+
+.services{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.services::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+.work_type{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.work_item{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 380px;
+    position: relative;
+    padding-left: 80px;
+    padding-bottom: 100px;
+}
+
+.work_item:nth-last-child(-n+3){
+    padding-bottom: 0;
+}
+
+.icon{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+}
+
+.item_name{
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-bottom: 14px; 
+}
+
+.work_about{
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+
+
+/* секция meet_our_team*/
+
+.meet_our_team{
+    padding-bottom: 80px;
+}
+
+.who_we_are{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: "Kaushan Script";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 16px;
+}
+.our_team{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.our_team::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.text{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.team{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_item{
+    margin: 0;
+    padding: 0;
+    width: 380px;
+    position: relative;
+   
+
+}
+
+
+.image{
+    position: relative;
+    z-index: 1;
+}
+
+.hover{
+    width: 100%;
+    height: 470px;
+    background-image: linear-gradient( to top, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.socials{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 223px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.social_item{
+    width: 55px;
+    height: 55px;
+    opacity: 1;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+}
+
+.facebook{
+    background-image: url(/img/facebook.png);
+}
+.twitter{
+    background-image: url(/img/twitter.png);
+}
+.pinterest{
+    background-image: url(/img/pinterest.png);
+}
+.instagram{
+    background-image: url(/img/instagram.png);
+}
+
+.social_item:hover{
+    transition: background-color 200ms linear;
+    background-color: #95e1d3;
+}
+
+.hover:hover{
+    transition: opacity 200ms linear;
+    opacity: 0.9;
+}
+
+.image:hover{
+    transition: transform 200ms linear;
+    transform: translate(-10px,-10px);
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+}
+
+
+.name_worker{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 10px;
+}
+
+.professional {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+   
+  }
+
+/* футер */
+
+.down_menu{
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
