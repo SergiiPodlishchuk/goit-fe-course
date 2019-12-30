@@ -1,0 +1,56 @@
+.Rectangle_14 {
+  background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+ 
+  
+}
+
+
+.MoGo {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 357.516px;
+  top: 21.5px;
+  z-index: 92;
+}
+
+.Rectangle_5_copy_6 {
+  background-color: rgb(243, 129, 129);
+  position: absolute;
+  left: 1071px;
+  top: 62px;
+  width: 50px;
+  height: 3px;
+  z-index: 86;
+}
+.We_work_with {
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 893.75px;
+  top: 176.157px;
+  z-index: 49;
+}
+.Amazing_Services {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 800.996px;
+  top: 217.5px;
+  z-index: 50;
+}
+
+
