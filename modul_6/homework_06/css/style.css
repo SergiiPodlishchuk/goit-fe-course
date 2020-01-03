@@ -27,11 +27,16 @@ img{
 }
 
 .navigation{
-    height: 50px;
+    
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding-top: 30px;
     padding-bottom: 128px;
+}
+
+a{
+    display: block;
 }
 
 .link_logo{
@@ -68,8 +73,9 @@ img{
     text-decoration: none;
 }
 
-.line{
-    position: absolute;
+.item a::after{
+    content: '';
+    display: block;
     width: 100%;
     height: 3px;
     background-color: #f38181;
@@ -77,19 +83,13 @@ img{
     opacity: 0;
 }
 
-/* @keyframes item{
-    0%{color: #fce38a}
-    100%{color: #f38181;}
-} */
-
-.item:hover .line{
+.item a:hover::after{
     transition: opacity 200ms linear;
     opacity: 1;
 }
 .item a:hover{
     transition: color 200ms linear;
     color: #f38181;
-    /* animation: item 200ms linear 10; */
 }
 
 /* секция amazing_services*/
@@ -99,19 +99,6 @@ img{
 }
 
 .work_with{
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-family: "Kaushan Script";
-    color: rgb(51, 51, 51);
-    line-height: 1.2;
-    font-weight: normal;
-    text-align: center;
-    padding-bottom: 16px;
-
-}
-
-.services{
     margin: 0;
     padding: 0;
     font-size: 30px;
@@ -124,7 +111,21 @@ img{
     padding-bottom: 60px;
 }
 
-.services::after{
+.work_with span{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    font-size: 24px;
+    font-family: "Kaushan Script";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.work_with::after{
     content: "";
     display: block;
     width: 60px;
@@ -159,16 +160,38 @@ img{
     padding-bottom: 0;
 }
 
-.icon{
+.work_item::before{
+    content: '';
     position: absolute;
+    
+    background-repeat: no-repeat;
+    background-position: center;
     top: 0;
     left: 20px;
     width: 35px;
     height: 35px;
 }
 
+.alarm::before{
+    background-image: url(../img/ALARM.png);
+}
+.line_graph::before{
+    background-image: url(../img/LINE\ GRAPH.png);
+}
+.computer::before{
+    background-image: url(../img/COMPUTER\ _\ OK.png);
+}
+.books::before{
+    background-image: url(../img/BOOK\ 2.png);
+}
+.home::before{
+    background-image: url(../img/HOME.png);
+}
+.image::before{
+    background-image: url(../img/IMAGE.png);
+}
+
 .item_name{
-    width: 300px;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -176,13 +199,12 @@ img{
     color: rgb(51, 51, 51);
     text-transform: uppercase;
     line-height: 1.2;
-    padding-bottom: 14px; 
+    margin-bottom: 14px; 
 }
 
 .work_about{
     margin: 0;
     padding: 0;
-    width: 300px;
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(153, 153, 153);
@@ -196,18 +218,8 @@ img{
     padding-bottom: 80px;
 }
 
+
 .who_we_are{
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-family: "Kaushan Script";
-    color: rgb(51, 51, 51);
-    line-height: 1.2;
-    font-weight: normal;
-    text-align: center;
-    padding-bottom: 16px;
-}
-.our_team{
     margin: 0;
     padding: 0;
     font-size: 30px;
@@ -220,7 +232,21 @@ img{
     padding-bottom: 40px;
 }
 
-.our_team::after{
+.who_we_are span{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    font-size: 24px;
+    font-family: "Kaushan Script";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.who_we_are::after{
     content: "";
     display: block;
     width: 60px;
@@ -265,11 +291,12 @@ img{
 .hover{
     width: 100%;
     height: 470px;
-    background-image: linear-gradient( to top, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: linear-gradient( to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
+    transition: opacity 200ms linear;
 }
 
 .socials{
@@ -314,8 +341,7 @@ img{
 }
 
 .hover:hover{
-    transition: opacity 200ms linear;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .image:hover{
@@ -386,6 +412,9 @@ input{
     width: 230px;
     height: 40px;
     border: 1px solid #e5e5e5;
+}
+
+input::placeholder{
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(204, 204, 204);
@@ -409,3 +438,4 @@ button{
     text-align: center;
     margin-left: -4px;
 }
+
