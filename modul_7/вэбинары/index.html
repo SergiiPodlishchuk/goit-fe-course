@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="signup_form" action="#">
+        <section class="autorizh">
+            <h2>Personal data</h2>
+            <ul>
+                <li>
+                    <input type="email" placeholder="Email*" autofocus name="Email" required autocomplete="off">
+                    <label for=""></label>
+                </li>
+                <li>
+                    <input type="password" placeholder="Password*" name="pass" required>
+                    <label for=""></label>
+                </li>
+            </ul>
+
+
+
+        </section>
+        <section class="screen_list">
+            <h2>Screen size</h2>
+            <ul class="screen_size_list">
+                <li>
+
+                    <input type="checkbox" name="screen_size" value="13" id="screen_size_13">
+                    <label for="screen_size_13">13"</label>
+                </li>
+
+                <li>
+
+                    <input type="checkbox" name="screen_size" value="15" id="screen_size_15">
+                    <label for="screen_size_15">15"</label>
+                </li>
+                <li>
+
+                    <input type="checkbox" name="screen_size" value="17" id="screen_size_17">
+                    <label for="screen_size_17">17"</label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="theme">
+            <h2>Theme</h2>
+            <ul class="theme_list">
+                <li>
+                    <input type="radio" name="theme_type" value="default" id="">
+                    <label>default</label>
+                </li>
+                <li>
+                    <input type="radio" name="theme_type" value="dark" id="">
+                    <label>dark</label>
+                </li>
+                <li>
+                    <input type="radio" name="theme_type" value="light" id="">
+                    <label>light</label>
+                </li>
+            </ul>
+        </section>
+        <!-- <fieldset>
+            <legend>Option</legend>
+            <div> <input type="checkbox"><span>sdf</span> </div>
+            <div> <input type="checkbox"><span>sdf</span> </div>
+            <div> <input type="checkbox"><span>sdf</span> </div>
+
+        </fieldset> -->
+
+        <section class="city">
+            <h2>city</h2>
+            <select name="city">
+                <option value="kiev">Киев</option>
+                <option value="kharkov">Харьков</option>
+                <option value="Honduras">ГОндурас</option>
+                <option value="Titikaka">Тытыкака</option>
+            </select>
+        </section>
+
+        <section class="custom">
+            <h2>custom checkbox</h2>
+            <ul class="custom-list">
+                <li>
+                    <input class="visually-hidden" type="checkbox" name="custom_check" id="custom_check_1">
+                    <label for="custom_check_1">custom check 1</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="custom_check" id="custom_check_2">
+                    <label for="custom_check_2">custom check 2</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="custom_check" id="custom_check_3">
+                    <label for="custom_check_3">custom check 3</label>
+                </li>
+            </ul>
+        </section>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <button type="submit">Sign up</button>
+        <button type="reset">Clear all</button>
+
+    </form>
+</body>
+
+</html>

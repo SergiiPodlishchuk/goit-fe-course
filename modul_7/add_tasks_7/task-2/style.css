@@ -1,0 +1,46 @@
+.send_message{
+    margin: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"]{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+input[type="email"]{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+input::placeholder{
+    font-size: 10px;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+textarea::placeholder{
+    font-family: Roboto;
+}
+
+
+button{
+    width: 100px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: red;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+
+
+}
