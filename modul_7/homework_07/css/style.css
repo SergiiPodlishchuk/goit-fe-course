@@ -1,0 +1,213 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+@font-face{
+    font-family: "Wisdom Script";
+    src: url();
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 30px;
+    padding-bottom: 128px;
+}
+
+a{
+    display: block;
+}
+
+.link_logo{
+    text-decoration: none;
+    font-size: 26px;
+    color:#222222;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 41px;
+    font-family: 'Leckerli One', cursive;
+}
+
+.link_logo:hover{
+    color: #fed136;
+}
+
+.main_menu{
+    flex-basis: 485px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.item a{
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    line-height: 41px;
+    text-decoration: none;
+}
+    
+.item a:hover{
+    color: #fed136;
+}
+
+
+
+/* Секция сервис */
+
+.services_title{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat";
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.services_title span{
+    display: block;
+    font-size: 16px;
+    font-family: "Droid Serif";
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    text-transform: initial;
+    padding: 5px;
+}
+
+.service_list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_list_item{
+    width: 290px;
+    text-align: center;
+}
+
+.service_list_item::before{
+    text-align: center;
+    display: inline-block;
+    width: 73px;
+    height: 73px;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid #fed136;
+    border-radius: 50%;
+}
+
+.service_list_item:nth-child(1)::before{
+    background-image: url(../img/Icon-Basket.png);
+}
+
+.service_list_item:nth-child(2)::before{
+    background-image: url(../img/Icon-Laptop.png);
+}
+
+.service_list_item:nth-child(3)::before{
+    background-image: url(../img/Icon-Locked.png);
+}
+
+.service_list_item-title{
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(34, 34, 34);
+    font-weight: bold;         
+}
+
+.service_list_item-about{
+    font-size: 14px;
+    font-family: "Roboto Slab";
+    color: rgb(119, 119, 119);
+}
+
+.services{
+    padding-bottom: 120px;
+}
+
+
+.footer{
+    background-color: rgb(34, 34, 34);
+}
+
+.contain{
+    background-image: url(..//img/Map_Image.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: right 150px;
+}
+
+.contact_us-title{
+    margin: 0;
+    padding: 0;
+    padding-top: 110px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+.contact_us-title span{
+    display: block;
+    font-size: 16px;
+    font-family: "Droid Serif";
+    color: #656565;
+    font-style: italic;
+    text-transform: initial;
+    padding: 5px;
+}
+
+.contact_us{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.your_data_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.your_data_list_item{
+    width: 455px;
+}
+
+.your_data_list_item input{
+    width: 455px;
+}
+
+
+.contact_us textarea{
+    width: 455px;
+}
