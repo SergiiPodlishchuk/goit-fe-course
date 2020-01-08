@@ -4,8 +4,17 @@
     box-sizing: inherit;
 }
 @font-face{
-    font-family: "Wisdom Script";
-    src: url();
+    font-family: "Leckerli One";
+    src: url(/fonts/LeckerliOne-Regular.ttf);
+}
+@font-face{
+    font-family: "Roboto Slab";
+    src: url(/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: "Noto Serif";
+    src: url(/fonts/Noto_Serif/NotoSerif-Italic.ttf);
 }
 
 body{
@@ -85,12 +94,13 @@ a{
     color: rgb(34, 34, 34);
     font-weight: bold;
     text-transform: uppercase;
+    padding-bottom: 60px;
 }
 
 .services_title span{
     display: block;
     font-size: 16px;
-    font-family: "Droid Serif";
+    font-family: "Noto Serif";
     color: rgb(119, 119, 119);
     font-style: italic;
     text-transform: initial;
@@ -143,6 +153,7 @@ a{
 
 .service_list_item-about{
     font-size: 14px;
+    line-height: 1.2;
     font-family: "Roboto Slab";
     color: rgb(119, 119, 119);
 }
@@ -151,9 +162,10 @@ a{
     padding-bottom: 120px;
 }
 
-
+/* футер */
 .footer{
     background-color: rgb(34, 34, 34);
+    padding-bottom: 50px;
 }
 
 .contain{
@@ -179,7 +191,7 @@ a{
 .contact_us-title span{
     display: block;
     font-size: 16px;
-    font-family: "Droid Serif";
+    font-family: "Noto Serif";
     color: #656565;
     font-style: italic;
     text-transform: initial;
@@ -204,10 +216,84 @@ a{
 }
 
 .your_data_list_item input{
+    box-sizing: border-box;
     width: 455px;
+    height: 52px;
+    margin-bottom: 27px;
+    border: none;
+    border-radius: 5px;
+}
+
+.your_data_list_item input::placeholder{
+    padding: 20px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2; 
+}
+
+.your-name:valid{
+    outline: 2px solid green;
+    outline-offset: -2px;
+}
+.your-name:invalid{
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
+.your-email:valid{
+    outline: 2px solid green;
+    outline-offset: -2px;
+}
+
+.your-email:invalid{
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
+.contact_us textarea{
+    box-sizing: border-box;
+    width: 455px;
+    height: 210px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact_us textarea::placeholder{
+    padding: 20px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;   
+}
+
+.contact_us textarea:valid{
+    outline: 2px solid green;
+    outline-offset: -2px;
+}
+.contact_us textarea:invalid{
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
 
 
-.contact_us textarea{
-    width: 455px;
+.contact_us button{
+    width: 240px;
+    height: 65px;
+    background-color: #fed136;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: auto;
+    cursor: pointer;
 }
