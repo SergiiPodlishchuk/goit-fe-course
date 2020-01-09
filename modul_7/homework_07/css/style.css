@@ -112,23 +112,27 @@ a{
 /* Секция сервис */
 
 .services_title{
+    margin: 0;
+    padding: 0;
     text-align: center;
     font-size: 40px;
     font-family: "Montserrat";
     color: rgb(34, 34, 34);
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 }
 
-.services_title span{
-    display: block;
+.services_about{
+    margin: 0;
+    padding: 0;
+    text-align: center;
     font-size: 16px;
     font-family: "Noto Serif";
     color: rgb(119, 119, 119);
     font-style: italic;
     text-transform: initial;
-    padding: 5px;
+    padding-bottom: 75px;
 }
 
 .service_list{
@@ -169,15 +173,20 @@ a{
 }
 
 .service_list_item-title{
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     font-family: "Montserrat";
     color: rgb(34, 34, 34);
-    font-weight: bold;         
+    font-weight: bold;  
+    line-height: 75px;      
 }
 
 .service_list_item-about{
+    margin: 0;
+    padding: 0;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 20px;
     font-family: "Roboto Slab";
     color: rgb(119, 119, 119);
 }
@@ -209,17 +218,19 @@ a{
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 50px;
+    
 }
 
-.contact_us-title span{
-    display: block;
+.contact_us_about{
+    margin: 0;
+    padding: 0;
+    text-align: center;
     font-size: 16px;
     font-family: "Noto Serif";
     color: #656565;
     font-style: italic;
     text-transform: initial;
-    padding: 5px;
+    padding-bottom: 75px;
 }
 
 .contact_us{
@@ -309,7 +320,7 @@ a{
 .contact_us button{
     width: 240px;
     height: 65px;
-    background-color: #fed136;
+    background-color: #999393;
     border: none;
     border-radius: 3px;
     font-size: 18px;
@@ -320,4 +331,8 @@ a{
     line-height: 1.2;
     margin: auto;
     cursor: pointer;
+}
+
+.contact_us > button:hover{
+    background-color: #fed136;
 }
