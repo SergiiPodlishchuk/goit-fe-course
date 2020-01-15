@@ -1,0 +1,56 @@
+/* @media (max-width: 767px){
+
+} */
+
+@media (min-width: 768px){
+    .wrapper{
+        max-width: 768px;
+    }
+    .header{
+        background-image: url(/img/Vector_Smart_Object_tablet.png);
+        background-color: #1a1915;
+        height: 700px;
+    }
+    .registration{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 35px;
+        justify-content: space-between;
+    }
+    .share_title{
+        margin: 0 auto;
+        width: 550px;
+        font-size: 52px;
+        padding-bottom: 32px;
+    }
+    .share_title span{
+        width: 100%;
+        font-size: 24px;
+    }
+    .meet_list{
+        width: 492px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .meet-list-item:nth-child(1){
+        order: 1;
+    }
+    .meet-list-item:nth-child(2){
+        order: 3;
+    }
+    .meet-list-item:nth-child(3){
+        order: 2;
+    }
+    .meet-list-item:nth-child(4){
+        order: 4;
+    }
+}
+
+@media (min-width: 940px){
+    .wrapper{
+        max-width: 940px;
+    }
+   
+}

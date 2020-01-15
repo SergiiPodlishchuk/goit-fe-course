@@ -1,0 +1,31 @@
+.wrapper{
+    width: 768px;
+}
+
+.Content{
+    box-sizing: border-box;
+    background-color: bisque;
+    padding: 50px;
+   
+    height: 300px;
+}
+
+.Sidebar{
+    box-sizing: border-box;
+    background-color: blueviolet;
+    padding: 50px;
+    
+    height: 300px;
+}
+
+@media (min-width: 768px){
+    .wrapper{
+        display: flex;
+    }
+    .Content{
+        width: 70%;
+    }
+    .Sidebar{
+        width: 30%;
+    }
+}
