@@ -51,10 +51,6 @@
     .wrapper{
         max-width: 940px;
     }
-    .header{
-        background-image: url(/img/Vector_Smart_Object_desktop.png);
-        background-color: #1a1915;
-    }
     .registration{
         padding: 0;
         display: flex;
