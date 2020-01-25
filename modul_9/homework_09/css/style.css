@@ -1,0 +1,218 @@
+
+img{
+    display: block;
+    max-width: 100%;
+    
+}
+
+
+.header{
+    background-image: url(../img/Vector_Smart_Object_desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1a1915;
+    height: 540px;
+    margin-bottom: 70px;
+}
+
+.registration{
+    padding-top: 20px;
+    margin-bottom: 35px;
+}
+.log_sign_list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 115px;
+}
+
+.log_sign_item a{
+    display: block;
+    text-decoration: none;
+    
+    width: 90px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    border-color: transparent;
+}
+
+.log_sign_item a:hover{
+    border-color: #ffffff;
+}
+
+.URLAUBSGLÜCK_title{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: center;
+    
+}
+
+.share_title{
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 18px;
+    
+}
+
+.share_title span{
+    margin: 0 auto;
+    width: 220px;
+    text-transform: initial;
+    display: block;
+    font-size: 18px;
+    font-family: "Roboto"; 
+    font-weight: lighter;
+    padding-top: 15px;
+}
+
+.find{
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    border-radius: 20px;
+    background-color: #ff4e50;
+    cursor: pointer;
+}
+
+/* секция MEET */
+
+.meet_title{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.meet-list-item{
+    margin: 0 auto;
+    width: 220px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.meet-list-item img{
+    margin: 0 auto;
+}
+
+.meet-list-item::before{
+    box-sizing: border-box;
+    position: absolute;
+    top: 121px;
+    left: 121px;
+    transform: translate(50%, -100%);
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.icon-comp::before{
+    background-image: url(../img/icons/Shape128.png);
+    background-color: #ff4e50;
+}
+.icon-botle:before{
+    background-image: url(../img/icons/Shape155.png);
+    background-color: #ffa507;
+}
+.icon-coffe::before{
+    background-image: url(../img/icons/Shape153.png);
+    background-color: #1cd7ad;
+}
+.icon-twitter::before{
+    background-image: url(../img/icons/Shape170.png);
+    background-color: #4e73db;
+}
+
+.name{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.about_partner{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+}
+.see_other_partner{
+    display: block;
+    margin: 0 auto;
+    padding: 15px 65px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 78, 80);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    border: none;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.see_other_partner:hover{
+    border-color:#ff4e50;
+}
+
+@media (min-width: 768px){
+    
+    .share_title{
+        margin: 0 auto;
+        width: 550px;
+        font-size: 52px;
+        padding-bottom: 32px;
+    }
+    .share_title span{
+        width: 100%;
+        font-size: 24px;
+    }
+    .header{
+        padding-top: 35px;
+    }
+}
