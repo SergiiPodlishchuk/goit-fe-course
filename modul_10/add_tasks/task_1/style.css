@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.bgimg{
+    width: 200px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-color: green;
+    background-position: center;
+    background-image: url(/img/placeimg_400_200_nature.jpg);
+}
+
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+   
+
+    .bgimg{
+        background-image: url(/img/placeimg_800_400_nature.jpg);
+    }
+}
+
+.header{
+    width: 500px;
+    margin: 0 auto;
+}
+.header__title{
+    text-align: center;
+    
+}
+
+.header__nav{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.header__nav--link{
+    display: block;
+}
