@@ -20,7 +20,7 @@ img{
     max-width: 1200px;
     margin: 0 auto;
 }
-.header{
+.background_image{
     height: 1000px;
     background-position: center;
     background-size: cover;
@@ -156,7 +156,8 @@ img{
     margin: 0 auto;
     cursor: pointer;
 }
-
+/* MAIN */
+/* SECTION AMAZING SERVICES */
 .amazing_services_title{
     margin: 0;
     padding: 0;
@@ -251,6 +252,7 @@ img{
     text-align: left;
 }
 
+/* SECTION MEET OUR TEAM */
 .meet_our_team{
     margin-bottom: 80px;
 }
@@ -312,20 +314,31 @@ img{
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
+
 .team_list__item{
     position: relative;
 }
 
 .team_list__image{
+    width: 380px;
+    height: 470px;
     position: relative;
-    
+}
 
+.team_list__item::after{
+    content: '';
+    width: 100%;
+    height: 470px;
+    background-color: #95e1d3;  
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 .list_hover{
     width: 100%;
-    height: 470px;
-    background-image: -ms-linear-gradient( 90deg, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%);
+    height: 100%;
+    background-image: linear-gradient( 90deg, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%);
     position: absolute;
     top: 0;
     opacity: 0;
@@ -350,26 +363,28 @@ img{
 }
 
 .list_socials{
-    margin: 0;
-    padding: 0;
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    text-align: center;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
+    -webkit-transform: translate(-30%,-50%);
+        -ms-transform: translate(-30%,-50%);
+            transform: translate(-30%,-50%);
 }
 
-.list_socials__item{
+.list_socials__item a{
     position: relative;
+    display: block;
     width: 56px;
     height: 56px;
     background-color: #fce38a;
-   
 }
 
 .list_socials__item svg{
@@ -385,7 +400,7 @@ img{
     fill: #f38181;
 }
 
-.list_socials__item:hover{
+.list_socials__item a:hover{
     background-color: #f38181;
 }
 
@@ -393,15 +408,6 @@ img{
     fill: #ffffff;
 }
 
-.team_list_background{
-    width: 100%;
-    height: 470px;
-    background-color: #95e1d3;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-   
-}
 
 .name_employee{
     margin: 0;
