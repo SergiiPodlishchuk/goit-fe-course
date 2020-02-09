@@ -21,7 +21,7 @@ img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(/img/picture.jpg);
+    background-image: linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(..//img/picture.jpg);
     margin-bottom: 40px;
 }
 
@@ -462,9 +462,7 @@ button{
 
 
 @media (min-resolution: 2dppx){
-    .header{
-        background-image: -moz-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(/img/picture@2x.jpg);
-        background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(/img/picture@2x.jpg);
-        background-image: -ms-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(/img/picture@2x.jpg);
-    }
+    .background_image{
+        background-image: linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(..//img/picture@2x.jpg);
+        }
 }
