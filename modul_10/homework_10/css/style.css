@@ -21,9 +21,7 @@ img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: -moz-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(/img/picture.jpg);
-    background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(/img/picture.jpg);
-    background-image: -ms-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(/img/picture.jpg);
+    background-image: linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(/img/picture.jpg);
     margin-bottom: 40px;
 }
 
@@ -334,7 +332,6 @@ img{
     margin: 0 auto;
     padding: 0;
     position: relative;
-    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-30%,-50%);
